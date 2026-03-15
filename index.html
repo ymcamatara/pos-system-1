@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamod POS - Dashboard</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons (Solid for thicker icons) -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-icon">
+                    <i class='bx bxs-store'></i>
+                </div>
+                <h2>Shamod POS</h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <i class='bx bxs-dashboard'></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class='bx bxs-cart'></i>
+                    <span>New Bill</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class='bx bxs-box'></i>
+                    <span>Inventory</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class='bx bxs-receipt'></i>
+                    <span>Invoices</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class='bx bxs-bar-chart-alt-2'></i>
+                    <span>Reports</span>
+                </a>
+                
+                <div class="nav-spacer"></div>
+
+                <a href="#" class="nav-item">
+                    <i class='bx bxs-shield'></i>
+                    <span>Accounts</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <button class="btn btn-outline">
+                        <i class='bx bx-globe'></i>
+                        MarketPlace
+                    </button>
+                    <div class="time-pill" id="current-time">
+                        10:40 PM - 3/10/2026
+                    </div>
+                    <div class="admin-info">
+                        <span class="admin-name">Admin Portal</span>
+                        <div class="avatar">AD</div>
+                    </div>
+                    <button class="btn btn-icon">
+                        <i class='bx bx-log-out-circle'></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon icon-purple">
+                            <i class='bx bxs-file-blank'></i>
+                        </div>
+                        <div class="stat-details">
+                            <span class="stat-title">Total Bills Today</span>
+                            <span class="stat-value">6</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon icon-purple">
+                            <i class='bx bxs-calendar'></i>
+                        </div>
+                        <div class="stat-details">
+                            <span class="stat-title">Total Bills This Month</span>
+                            <span class="stat-value">6</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon icon-green">
+                            <i class='bx bxs-bank'></i>
+                        </div>
+                        <div class="stat-details">
+                            <span class="stat-title">Daily Income</span>
+                            <span class="stat-value">Rs. 1,44,50,000.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon icon-green">
+                            <i class='bx bxs-wallet'></i>
+                        </div>
+                        <div class="stat-details">
+                            <span class="stat-title">Monthly Income</span>
+                            <span class="stat-value">Rs. 1,44,50,000.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon icon-purple">
+                            <i class='bx bxs-package'></i>
+                        </div>
+                        <div class="stat-details">
+                            <span class="stat-title">Total Products</span>
+                            <span class="stat-value">4</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon icon-red">
+                            <i class='bx bxs-error'></i>
+                        </div>
+                        <div class="stat-details">
+                            <span class="stat-title">Low Stock Products</span>
+                            <span class="stat-value">2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Table -->
+                <div class="table-container">
+                    <h3 class="table-title">Low Stock Alert</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>PRODUCT NAME</th>
+                                <th>CURRENT QUANTITY</th>
+                                <th>PRICE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="product-name">Macbook M4 Air</div>
+                                    <div class="product-sub">[Shamod Firezz]</div>
+                                </td>
+                                <td>7</td>
+                                <td>Rs. 3,00,000.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="product-name">Iphone 17 Pro</div>
+                                    <div class="product-sub">[Shamod Firezz]</div>
+                                </td>
+                                <td>9</td>
+                                <td>Rs. 3,00,000.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
